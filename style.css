@@ -9,6 +9,7 @@
     --color-secondary: #f1f1f1;
     --color-font: #1e1e1e;
     --color-accent: #20A9FE;
+    --color-hover: #ccecff;
 }
 
 /* font-family: 'Roboto', sans-serif; */
@@ -27,6 +28,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
+
 
 .background_primary {
     background-color: var(--color-primary);
@@ -97,4 +99,36 @@ img {
     margin: 0px 20px 30px;
     font-weight: 400;
     font-size: 1.3em;
+}
+
+/* link styles */
+
+a {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-accent);
+}
+
+a:hover {
+    background-color: var(--color-hover);
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+/* button styles */
+.button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: none;
+    background-color: var(--color-accent);
+    color: #fff;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--color-hover);
 }
