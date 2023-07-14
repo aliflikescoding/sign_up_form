@@ -1,7 +1,7 @@
 
 # Sign Up Form
 
-An asinged project in The Odin Project. It's a sign up form with only client side validation without any serverside validation. maybe the course will asign it in the future bur for not it's only client side
+An asinged project in The Odin Project. It's a sign up form with only client side validation without any serverside validation. maybe the course will asign it in the future bur for now it's only client side
 
 ## Live Preview
 
