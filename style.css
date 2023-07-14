@@ -115,6 +115,10 @@ a:hover {
     transition: .3s ease-in-out;
 }
 
+.link_display {
+    margin-top: 0px;
+}
+
 /* button styles */
 .button {
     padding: 15px 40px;
@@ -132,3 +136,113 @@ a:hover {
 .button:hover {
     background-color: var(--color-hover);
 }
+
+.button_form {
+    margin-bottom: 10px;
+}
+
+.yk {
+    margin: 30px 0;
+}
+
+/* form styles */
+
+.form_title {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.form_different_color {
+    background-color: var(--color-primary);
+    width: 100vw;
+    margin-left: 0;
+}
+
+.form_container {
+    display: flex;
+}
+
+.form_left {
+    margin-right: 10px;
+}
+
+.form_right {
+    margin-left: 10px;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 300px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid var(--color-font);
+    transition:0.3s ease all; 
+    -moz-transition:0.3s ease all; 
+    -webkit-transition:0.3s ease all;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: none;
+}
+
+/* -label styles- */
+
+label {
+    color: var(--color-font); 
+    font-size: inherit;
+    font-weight: 300;
+    position:absolute;
+    pointer-events: none;
+    left:5px;
+    top:10px;
+    transition:0.3s ease all; 
+    -moz-transition:0.3s ease all; 
+    -webkit-transition:0.3s ease all;
+}
+
+/* when label is active */
+input:focus ~ label,
+input:valid ~ label {
+    top:-20px;
+    font-size:0.875rem;
+    color: var(--color-accent);
+}
+
+/* -bar styling- */
+.bar {
+    position:relative;
+    display:block;
+    width:300px;
+}
+
+.bar:before {
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background: var(--color-accent); 
+    transition:0.3s ease all; 
+    -moz-transition:0.3s ease all; 
+    -webkit-transition:0.3s ease all;
+}
+
+.bar:before {
+    left: 0;
+}
+
+/* when bar is active */
+input:focus ~ .bar:before {
+    width:100%;
+}
+
