@@ -38,34 +38,40 @@
                     <div class="form_container">
                         <div class="form_left">
                             <div class="group">
-                                <input type="text" name="user_first_name" id="user_first_name" required>
+                                <input type="text" class="name_user"  name="user_first_name" id="user_first_name" pattern="^[^0-9]+$" size="30" maxlength="245" placeholder="John" required>
+                                <span class="text"></span>
                                 <span class="bar"></span>
                                 <label for="user_first_name">First Name</label>
                             </div>
                             <div class="group">
-                                <input type="email" name="user_email" id="user_email" required>
+                                <input type="email" name="user_email" id="user_email" placeholder="johndoe@somethingmail.com" required>
+                                <span class="text"></span>
                                 <span class="bar"></span>
                                 <label for="user_email">Email</label>
                             </div>
                             <div class="group">
-                                <input type="password" name="user_password" id="user_password" required>
+                                <input type="password" name="user_password" id="user_password" pattern="^^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" placeholder="please follow the standards" minlength="8" required>
+                                <span class="text"></span>
                                 <span class="bar"></span>
                                 <label for="user_password">Password</label>
                             </div>
                         </div>
                         <div class="form_right">
                             <div class="group">
-                                <input type="text" name="user_last_name" id="user_last_name" required>
+                                <input type="text" class="name_user" name="user_last_name" id="user_last_name" pattern="^[^0-9]+$" size="30" maxlength="245" placeholder="Doe" required>
                                 <span class="bar"></span>
+                                <span class="text"></span>
                                 <label for="user_last_name">Last Name</label>
                             </div>
                             <div class="group">
-                                <input type="tel" name="user_telephone" id="user_telephone" required>
+                                <input type="tel" name="user_telephone" id="user_telephone" placeholder="2029182132" minlength="8" required>
+                                <span class="text"></span>
                                 <span class="bar"></span>
                                 <label for="user_telephone">Telephone Number</label>
                             </div>
                             <div class="group">
-                                <input type="password" name="user_password" id="user_password_second" required>
+                                <input type="password" name="user_password" id="user_password_second" pattern="^^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" placeholder="please follow the standards" required>
+                                <span class="text"></span>
                                 <span class="bar"></span>
                                 <label for="user_password_second">Confirm Password</label>
                             </div>

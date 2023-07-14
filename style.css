@@ -164,6 +164,7 @@ a:hover {
 
 .form_container {
     display: flex;
+    margin-bottom: 30px;
 }
 
 .form_left {
@@ -202,6 +203,52 @@ input::after:required {
     content: "test";
 }
 
+input::placeholder {
+    opacity: 0;
+}
+
+input:focus::placeholder {
+    opacity: 1;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+/* required text */
+input:invalid ~ span.text::after {
+    position: absolute;
+    color: red;
+    font-size:0.875rem;
+    content: "required";
+}
+
+input[type="password"]:invalid ~ span.text::after {
+    position: absolute;
+    color: red;
+    font-size:0.875rem;
+    content: "Minimum eight characters, at least one letter, one number and one special character e.g #?!@$%^&*-";
+}
+
+input[type="email"]:invalid ~ span.text::after {
+    position: absolute;
+    color: red;
+    font-size:0.875rem;
+    content: "please make sure you add the @ symbol";
+}
+
+input[type="tel"]:invalid ~ span.text::after {
+    position: absolute;
+    color: red;
+    font-size:0.875rem;
+    content: "min of 8 numbers";
+}
+
+input.name_user:invalid ~ span.text::after {
+    position: absolute;
+    color: red;
+    font-size:0.875rem;
+    content: "do not include numbers";
+}
+
 /* -label styles- */
 
 label {
@@ -221,7 +268,7 @@ label {
 input:focus ~ label,
 input:valid ~ label {
     top:-20px;
-    font-size:0.875rem;
+    font-size: 0.875rem;
     color: var(--color-accent);
 }
 
