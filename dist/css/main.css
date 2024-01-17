@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/* #FFEDCB
+#C6B595 */
+:root {
+  --color-primary: #fff;
+  --color-secondary: #f1f1f1;
+  --color-font: #1e1e1e;
+  --color-accent: #20A9FE;
+  --color-hover: #ccecff;
+}
+
+/* font-family: 'Roboto', sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-font);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+.background_primary {
+  background-color: var(--color-primary);
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  display: relative;
+}
+
+/* left area */
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 40vw;
+  margin: 15px 45px;
+}
+
+.image_container {
+  margin-top: 150px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.deals {
+  margin: 10px;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+
+.logo {
+  position: absolute;
+  font-size: 3em;
+  margin-top: 15px;
+  margin-left: 15px;
+  font-weight: 700;
+  left: 0;
+  top: 0;
+  letter-spacing: 5px;
+}
+
+.logo_copy {
+  font-size: 0.5em;
+}
+
+/* right area */
+.right {
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  color: var(--color-font);
+}
+
+.right_background {
+  background-color: var(--color-secondary);
+}
+
+.right_conent {
+  margin: 0px 20px 30px;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+/* link styles */
+a {
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+a:hover {
+  background-color: var(--color-hover);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.link_display {
+  margin-top: 0px;
+}
+
+/* button styles */
+.button {
+  padding: 15px 40px;
+  font-size: 1.2em;
+  font-weight: 700;
+  border: none;
+  background-color: var(--color-accent);
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.27);
+}
+
+.button:hover {
+  background-color: var(--color-hover);
+}
+
+.button_form {
+  margin-bottom: 10px;
+}
+
+.yk {
+  margin: 30px 0;
+}
+
+/* form styles */
+.form_title {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.form_different_color {
+  background-color: var(--color-primary);
+  width: 100vw;
+  margin-left: 0;
+}
+
+.form_container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.form_left {
+  margin-right: 10px;
+}
+
+.form_right {
+  margin-left: 10px;
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  background-color: inherit;
+  border-bottom: 1px solid var(--color-font);
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: none;
+}
+
+input::after:required {
+  content: "test";
+}
+
+input::-moz-placeholder {
+  opacity: 0;
+}
+
+input::placeholder {
+  opacity: 0;
+}
+
+input:focus::-moz-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+input:focus::placeholder {
+  opacity: 1;
+  font-weight: 300;
+  font-size: 0.9em;
+}
+
+/* required text */
+input:invalid ~ span.text::after {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  content: "required";
+}
+
+input[type=password]:invalid ~ span.text::after {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  content: "Minimum eight characters, at least one letter, one number and one special character e.g #?!@$%^&*-";
+}
+
+input[type=email]:invalid ~ span.text::after {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  content: "please make sure you add the @ symbol";
+}
+
+input[type=tel]:invalid ~ span.text::after {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  content: "min of 8 numbers";
+}
+
+input.name_user:invalid ~ span.text::after {
+  position: absolute;
+  color: red;
+  font-size: 0.875rem;
+  content: "do not include numbers";
+}
+
+/* -label styles- */
+label {
+  color: var(--color-font);
+  font-size: inherit;
+  font-weight: 300;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+/* when label is active */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 0.875rem;
+  color: var(--color-accent);
+}
+
+/* -bar styling- */
+.bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+
+.bar:before {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: var(--color-accent);
+  transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -webkit-transition: 0.3s ease all;
+}
+
+.bar:before {
+  left: 0;
+}
+
+/* when bar is active */
+input:focus ~ .bar:before {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
