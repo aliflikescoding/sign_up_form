@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
+@import "./resets";
 
 /* #FFEDCB
 #C6B595 */
@@ -14,13 +14,6 @@
 
 /* font-family: 'Roboto', sans-serif; */
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 
 body {
@@ -28,11 +21,6 @@ body {
     color: var(--color-font);
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-}
-
-
-.background_primary {
-    background-color: var(--color-primary);
 }
 
 .page {
