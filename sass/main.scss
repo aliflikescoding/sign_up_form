@@ -101,7 +101,7 @@ a:hover {
     font-weight: 700;
     border: none;
     background-color: $primary;
-    color: #fff;
+    color: $background;
     letter-spacing: 1px;
     border-radius: 15px;
     cursor: pointer;
@@ -191,35 +191,35 @@ input:focus::placeholder {
 /* required text */
 input:invalid ~ span.text::after {
     position: absolute;
-    color: red;
+    color: $error;
     font-size:0.875rem;
     content: "required";
 }
 
 input[type="password"]:invalid ~ span.text::after {
     position: absolute;
-    color: red;
+    color: $error;
     font-size:0.875rem;
     content: "Minimum eight characters, at least one letter, one number and one special character e.g #?!@$%^&*-";
 }
 
 input[type="email"]:invalid ~ span.text::after {
     position: absolute;
-    color: red;
+    color: $error;
     font-size:0.875rem;
     content: "please make sure you add the @ symbol";
 }
 
 input[type="tel"]:invalid ~ span.text::after {
     position: absolute;
-    color: red;
+    color: $error;
     font-size:0.875rem;
     content: "min of 8 numbers";
 }
 
 input.name_user:invalid ~ span.text::after {
     position: absolute;
-    color: red;
+    color: $error;
     font-size:0.875rem;
     content: "do not include numbers";
 }
