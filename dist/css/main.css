@@ -5,20 +5,9 @@
   padding: 0;
 }
 
-/* #FFEDCB
-#C6B595 */
-:root {
-  --color-primary: #fff;
-  --color-secondary: #f1f1f1;
-  --color-font: #1e1e1e;
-  --color-accent: #20A9FE;
-  --color-hover: #ccecff;
-}
-
-/* font-family: 'Roboto', sans-serif; */
 body {
-  background-color: var(--color-primary);
-  color: var(--color-font);
+  background-color: #fff;
+  color: #1e1e1e;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -77,11 +66,11 @@ img {
   justify-content: center;
   align-items: start;
   flex-direction: column;
-  color: var(--color-font);
+  color: #1e1e1e;
 }
 
 .right_background {
-  background-color: var(--color-secondary);
+  background-color: #f6f6f6;
 }
 
 .right_conent {
@@ -94,11 +83,11 @@ img {
 a {
   font-weight: 400;
   text-decoration: none;
-  color: var(--color-accent);
+  color: #20A9FE;
 }
 
 a:hover {
-  background-color: var(--color-hover);
+  background-color: #ccecff;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
 }
@@ -113,7 +102,7 @@ a:hover {
   font-size: 1.2em;
   font-weight: 700;
   border: none;
-  background-color: var(--color-accent);
+  background-color: #20A9FE;
   color: #fff;
   letter-spacing: 1px;
   border-radius: 15px;
@@ -125,7 +114,7 @@ a:hover {
 }
 
 .button:hover {
-  background-color: var(--color-hover);
+  background-color: #ccecff;
 }
 
 .button_form {
@@ -144,7 +133,7 @@ a:hover {
 }
 
 .form_different_color {
-  background-color: var(--color-primary);
+  background-color: #fff;
   width: 100vw;
   margin-left: 0;
 }
@@ -175,7 +164,7 @@ input {
   width: 300px;
   border: none;
   background-color: inherit;
-  border-bottom: 1px solid var(--color-font);
+  border-bottom: 1px solid #1e1e1e;
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
@@ -248,7 +237,7 @@ input.name_user:invalid ~ span.text::after {
 
 /* -label styles- */
 label {
-  color: var(--color-font);
+  color: #1e1e1e;
   font-size: inherit;
   font-weight: 300;
   position: absolute;
@@ -265,7 +254,7 @@ input:focus ~ label,
 input:valid ~ label {
   top: -20px;
   font-size: 0.875rem;
-  color: var(--color-accent);
+  color: #20A9FE;
 }
 
 /* -bar styling- */
@@ -281,7 +270,7 @@ input:valid ~ label {
   width: 0;
   bottom: 1px;
   position: absolute;
-  background: var(--color-accent);
+  background: #20A9FE;
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
