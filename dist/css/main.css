@@ -68,11 +68,9 @@ img {
   flex-direction: column;
   color: #1e1e1e;
 }
-
 .right_background {
   background-color: #f6f6f6;
 }
-
 .right_content {
   margin: 0px 20px 30px;
   font-weight: 400;
@@ -85,7 +83,6 @@ a {
   text-decoration: none;
   color: #20A9FE;
 }
-
 a:hover {
   background-color: #ccecff;
   border-radius: 5px;
@@ -112,11 +109,9 @@ a:hover {
   -webkit-box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.27);
   -moz-box-shadow: 8px 5px 7px 1px rgba(0, 0, 0, 0.27);
 }
-
 .button:hover {
   background-color: #ccecff;
 }
-
 .button_form {
   margin-bottom: 10px;
 }
@@ -263,7 +258,6 @@ input:valid ~ label {
   display: block;
   width: 300px;
 }
-
 .bar:before {
   content: "";
   height: 2px;
@@ -274,9 +268,6 @@ input:valid ~ label {
   transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
   -webkit-transition: 0.3s ease all;
-}
-
-.bar:before {
   left: 0;
 }
 
