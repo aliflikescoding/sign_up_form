@@ -1,22 +1,3 @@
-
-# 
-
-
-
-## Live Preview
-
-[Live](https://aliflikescoding.github.io/sign_up_form_project/)
-## Lessons Learned
-
-What did you learn while building this project? What challenges did you face and how did you overcome them?
-* 
-* 
-* 
-* 
-* 
-* 
-* 
-
 <p align="center">
   <h1 align="center">Sign Up Form Project in Vanilla HTML, Javascript, and SASS</h1>
 </p>
